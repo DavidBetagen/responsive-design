@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" height="90px" class="logo" alt="">
+            <nav>
+                <ul id="menu_lists">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img onclick="togglemenu()" src="images/icon-menu.png" class="menu-icon" alt="">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Nitindo</h2>
+                <h3>Nintendo Switch is designed to fit your life</h3>
+                <p>Dedicated to handheld play</p>
+                <h4>199.99$</h4>
+                <button>BUY NOW <img src="images/arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="images/nintindo.png" class="controller" alt="">
+                <div class="color-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menu_lists = document.getElementById("menu_lists");
+
+        menu_lists.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menu_lists.style.maxHeight == "0px"){
+                menu_lists.style.maxHeight = "130px";
+            }else{
+                menu_lists.style.maxHeight = "0px";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
